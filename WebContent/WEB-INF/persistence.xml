@@ -1,0 +1,19 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+             version="2.1">
+             
+              <persistence-unit name="rubricaPS">
+    <jta-data-source>rubricaDS</jta-data-source>
+
+    <properties>
+        <property name="openejb.jpa.auto-scan" value="true"/>
+         <property name="eclipselink.ddl-generation" value="create-tables"/>
+         <property name="eclipselink.ddl-generation.output-mode" value="database"/>
+         <property name="eclipselink.logging.level" value="FINE"/>
+        </properties>
+        </persistence-unit>
+             
+ </persistence>       
+    
